@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hitesh Technology - Home</title>
+
+  <!-- css -->
+  <link rel="stylesheet" href="assets/css/bootstrap.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+</head>
+<body>
+  <!-- header -->
+  <header class="py-5">
+    <nav class="navbar navbar-expand-lg p-0">
+      <div class="container">
+        <!-- logo -->
+        <a class="navbar-brand m-0 p-0" href="index.php">
+          <img src="assets/images/logo-d.svg" alt="Logo">
+        </a>
+
+        <!-- mobile button -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#primary-navigation" aria-controls="primary-navigation" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <!-- navigation -->
+        <div class="collapse navbar-collapse" id="primary-navigation">
+          <ul class="navbar-nav m-auto mb-2 mb-lg-0 fw-semibold">
+            <li class="nav-item">
+              <a class="nav-link" href="index.php">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about-us.php">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.php">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#careerModal" data-bs-toggle="modal">Career</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.php">Contact</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav nav-sm mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link"><img src="assets/icons/linkedin.svg" /></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><img src="assets/icons/facebook.svg" /></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><img src="assets/icons/instagram.svg" /></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><img src="assets/icons/twitter.svg" /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>

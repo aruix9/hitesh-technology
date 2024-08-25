@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+	--font-p: "Inter", sans-serif;
+	--font-s: "Inter", sans-serif;
+	--font-m: Consolas, monospace;
+
+  /* color primary */
+	--p-l: #3f7fda;
+	--p-n: #1458b8;
+	--p-d: #07377a;
+  
+  /* color secondary */
+  --s-n: #d1f283;
+  --s-n: #abe721;
+  --s-n: #97ce17;
+
+  /* ascent colors */
+	--d-l: #ffd1d2;
+	--d-n: #bf4042;
+	--d-d: #871012;
+	--suc-l: #a0e675;
+	--suc-n: #119f26;
+	--i-l: #d5ebfb;
+	--i-n: #365368;
+	--i-d: #133f5f;
+	--w-l: #fff099;
+	--w-n: #766810;
+	--w-d: #3a340d;
+
+	/* neutral shades */
+	--n-100: #000000;
+	--n-90: #2c2c2c;
+	--n-80: #424241;
+	--n-70: #585857;
+	--n-60: #6e6e6d;
+	--n-50: #848383;
+	--n-40: #9a9999;
+	--n-30: #b0afae;
+	--n-20: #c6c5c4;
+	--n-10: #fcfbfb;
+	--n-0: #ffffff;
+
+	/* text */
+	--color-text: var(--n-90);
+	--color-text-d: var(--n-100);
+	--color-text-l: var(--n-60);
+	--color-placeholder: var(--n-40);
+
+	/* preloader */
+	--color-preloader-bg: var(--color-gray-19);
+	--color-loader: white;
+	--color-loader-light: rgba(255, 255, 255, 0.1);
+
+	/* spacing */
+	--multiplier: 1;
+	--base-size: 62.5%;
+	--sp: calc(32px * var(--multiplier));
+
+  /* font size */
+	--base-font-size: calc(18px * var(--multiplier));
+
+	/* vertical spacing */
+	--sp-xs: calc(0.125 * var(--sp));
+	--sp-sm: calc(0.25 * var(--sp));
+	--sp-md: calc(0.375 * var(--sp));
+	--sp-x: calc(0.5 * var(--sp));
+	--sp-lg: calc(0.625 * var(--sp));
+	--sp-xl: calc(0.75 * var(--sp));
+	--sp-xxl: calc(0.875 * var(--sp));
+	--sp-2x: calc(var(--sp));
+	--sp-2lg: calc(1.25 * var(--sp));
+	--sp-2xl: calc(1.5 * var(--sp));
+	--sp-2xxl: calc(1.75 * var(--sp));
+	--sp-3x: calc(2 * var(--sp));
+	--sp-3lg: calc(2.5 * var(--sp));
+	--sp-4x: calc(3 * var(--sp));
+	--sp-4lg: calc(3.5 * var(--sp));
+	--sp-5x: calc(4 * var(--sp));
+	--sp-5lg: calc(4.5 * var(--sp));
+	--sp-6x: calc(5 * var(--sp));
+
+	/* typography */
+	--scale-ratio: 1.2;
+	--text-size: var(--base-font-size);
+	--text-xs: calc((var(--text-size) / var(--scale-ratio)) / var(--scale-ratio));
+	--text-sm: calc(var(--text-xs) * var(--scale-ratio));
+	--text-md: calc(var(--text-sm) * var(--scale-ratio) * var(--scale-ratio));
+	--text-lg: calc(var(--text-md) * var(--scale-ratio));
+	--text-xl: calc(var(--text-lg) * var(--scale-ratio));
+	--text-xxl: calc(var(--text-xl) * var(--scale-ratio));
+	--text-xxxl: calc(var(--text-xxl) * var(--scale-ratio));
+	--text-display-1: calc(var(--text-xxxl) * var(--scale-ratio));
+	--text-display-2: calc(var(--text-display-1) * var(--scale-ratio));
+	--text-display-3: calc(var(--text-display-2) * var(--scale-ratio));
+
+	/* buttons */
+	--btn-bg: var(--n-20);
+	--btn-text: var(--n-100);
+  --btn-border: var(--btn-bg);
+	--btn-hover-bg: var(--n-40);
+	--btn-hover-text: var(--n-90);
+  --btn-hover-border: var(--btn-bg);
+	--btn-p-bg: var(--p-n);
+	--btn-p-text: var(--n-0);
+	--btn-p-hover-bg: var(--n-d);
+	--btn-p-hover-text: var(--n-0);
+  --btn-p-border: var(--btn-p-bg);
+  --btn-p-hover-border: var(--btn-p-bg);
+	--btn-stroke: var(--n-90);
+	--btn-stroke-text: var(--n-90);
+	--btn-stroke-hover: var(--n-90);
+	--btn-stroke-hover-text: var(--n-0);
+  --btn-space: var(--sp-3x);
+
+	/* preloader */
+	--loader: var(--n-0);
+	--loader-l: var(--n-40);
+	--loader-bg: var(--n-90);
+  
+	/* others */
+	--color-body: var(--n-0);
+	--color-border: var(--n-90);
+	--border-radius: 3px;
+
+	
+	/* override bootstrap */
+	--bs-font-sans-serif: var(--font-p);
+	--bs-navbar-nav-link-padding-x: var(--sp-2x);
+}
+/* on mobile devices below 600px */
+@media screen and (max-width: 600px) {
+	:root {
+		--multiplier: .9375;
+	}
+}
+
+/* override bootstrap */
+:root {
+	--bs-light-rgb: 242, 242, 242;
+	--bs-font-sans-serif: var(--font-p);
+	--bs-secondary-border-subtle: #4d555c;
+}
+.navbar {
+	--bs-navbar-active-color: var(--p-n);
+}
+.navbar-nav {
+	--bs-navbar-nav-link-padding-x: var(--sp-2x);
+}
+.navbar-nav.nav-sm {
+	--bs-navbar-nav-link-padding-x: var(--sp-sm);
+}
+.btn-outline-secondary {
+	--bs-btn-color: var(--n-80);
+	--bs-btn-border-color: var(--n-80);
+	--bs-btn-hover-bg: var(--n-80);
+	--bs-btn-hover-border-color: var(--n-80);
+	--bs-btn-active-bg: var(--n-80);
+	--bs-btn-active-border-color: var(--n-80);
+	--bs-btn-disabled-color: var(--n-80);
+	--bs-btn-disabled-border-color: var(--n-80);
+}
+
+/* useful */
+.min-vh {
+	min-height: 100vh;
+}
+
+.w-80 {
+	width: 80px;
+}
+
+/* responsive */
+@media (max-width: 991px) {
+	footer {
+		text-align: center;
+	}
+	footer .mt-5 {
+		margin-top: 0 !important;
+	}
+	footer .mb-5 {
+		margin-bottom: 1rem !important;
+	}
+	footer .d-inline-flex {
+		flex-wrap: wrap;
+		line-height: 34px;
+		justify-content: center;
+	}
+	footer .text-end {
+		text-align: center !important;
+	}
+}
+
+.nav-link.active {
+	text-underline-offset: 4px;
+	text-decoration: underline;
+	text-decoration-thickness: 2px !important;
+}
