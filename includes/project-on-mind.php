@@ -1,4 +1,4 @@
-<section class="py-5 bg-warning">
+<section class="py-5 bg-primary text-dark">
   <div class="container px-0">
     <div class="row">
       <div class="col-lg-6 col-xl-7 py-5">
@@ -6,10 +6,10 @@
       </div>
       <div class="col-lg-5 col-xl-3 offset-lg-1 offset-xl-1 d-flex flex-column align-self-center">
         <div class="px-3">
-          <h2 class="mb-4 fs-1">Have a Project on mind?</h2>
-          <p class="fs-5">We can help you bring your ideas to life. Let's talk about what we can build and raise together.</p>
+          <h2 class="mb-4 fs-1">Got a project in mind?</h2>
+          <p class="fs-5">We're here to turn your ideas into reality. Let's discuss how we can create and grow something amazing together.</p>
           <div class="text-left mt-5">
-            <a href="contact.php" class="btn btn-outline-dark px-3">Connect with Us</a>
+            <a href="contact.php" class="btn btn-dark px-3">Connect with Us</a>
           </div>
         </div>
       </div>

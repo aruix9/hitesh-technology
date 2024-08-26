@@ -5,7 +5,7 @@
       <div class="row mt-5">
         <div class="col-lg-5 mb-5">
           <img src="assets/images/logo.svg" alt="Logo">
-          <p class="mt-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos consectetur officiis doloremque ab adipisci cupiditate ratione dignissimos alias soluta repudiandae ipsam, assumenda saepe, perferendis aliquid ex earum expedita, laborum a.</p>
+          <p class="mt-4">Empowering digital growth with innovative, tailored solutions in eCommerce, UI/UX, SAP, Adobe, and Java development.</p>
         </div>
         <div class="col-lg-6 ms-auto text-end mb-5">
           <nav class="mb-5">
@@ -29,18 +29,18 @@
           </nav>
           <nav>
             <ul class="d-inline-flex list-inline mb-2 mb-lg-0 fw-semibold">
-              <li class="px-2">
+            <?php /*<li class="px-2">
                 <a class="nav-link"><img src="assets/icons/linkedin-l.svg" /></a>
+              </li> */ ?>
+              <li class="px-2">
+                <a class="nav-link" href="https://www.facebook.com/hiteshtechnologies" target="_blank"><img src="assets/icons/facebook-l.svg" /></a>
               </li>
               <li class="px-2">
-                <a class="nav-link" href="#"><img src="assets/icons/facebook-l.svg" /></a>
+                <a class="nav-link" href="https://www.instagram.com/hitesh.technologies/" target="_blank"><img src="assets/icons/instagram-l.svg" /></a>
               </li>
-              <li class="px-2">
-                <a class="nav-link" href="#"><img src="assets/icons/instagram-l.svg" /></a>
-              </li>
-              <li class="px-2">
+              <?php /*<li class="px-2">
                 <a class="nav-link" href="#"><img src="assets/icons/twitter-l.svg" /></a>
-              </li>
+              </li> */ ?>
             </ul>
           </nav>
         </div>

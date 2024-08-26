@@ -16,7 +16,7 @@
             <div class="border-top mt-3 my-md-5"></div>
           </div>
           <div class="col-md-8">
-            <h3 class="fs-2 m-0 mt-3 my-md-5 fw-light">If you are looking for an agency to help you create a remarkable presence online, you've come to the right place. We can help you take your business to the next level.</h3>
+            <h3 class="fs-2 m-0 mt-3 my-md-5 fw-light">Have a question or a project in mind? Reach out to us we are here to help bring your ideas to life. Let's start the conversation!</h3>
           </div>
         </div>
       </div>
@@ -32,39 +32,39 @@
             <div class="row">
               <div class="col-lg-7 mt-4">
                 <h5 class="mb-3">Address</h5>
-                <p class="m-0">123 Demo St, Lakeland, FL 45678, United States.</p>
+                <p class="m-0">NO.2668, H.A.L BDA Layout, Singasandra, AECS Layout, A Block Bangalore, Karnataka 560068</p>
               </div>
               <div class="col-lg-5 mt-4">
                 <h5 class="mb-3">Phone</h5>
-                <p class="m-0">+1 123-456-7890</p>
+                <p class="m-0">+91 7019206310</p>
               </div>
               <div class="col-lg-7 mt-5">
                 <h5 class="mb-3">Email</h5>
-                <p class="m-0">example@gmail.com</p>
+                <p class="m-0"><a href="mailtoo:info@hiteshtechnologies.com" class="text-dark">info@hiteshtechnologies.com</a></p>
               </div>
               <div class="col-lg-5 mt-5">
                 <h5 class="mb-3">Follow Us</h5>
                 <nav>
                   <ul class="d-inline-flex list-inline mb-2 mb-lg-0 fw-semibold">
-                    <li class="px-2">
+                    <?php /*<li class="px-2">
                       <a class="nav-link"><img src="assets/icons/linkedin.svg" /></a>
+                    </li> */ ?>
+                    <li class="px-2">
+                      <a class="nav-link" href="https://www.facebook.com/hiteshtechnologies" target="_blank"><img src="assets/icons/facebook.svg" /></a>
                     </li>
                     <li class="px-2">
-                      <a class="nav-link" href="#"><img src="assets/icons/facebook.svg" /></a>
+                      <a class="nav-link" href="https://www.instagram.com/hitesh.technologies/" target="_blank"><img src="assets/icons/instagram.svg" /></a>
                     </li>
-                    <li class="px-2">
-                      <a class="nav-link" href="#"><img src="assets/icons/instagram.svg" /></a>
-                    </li>
-                    <li class="px-2">
+                    <?php /*<li class="px-2">
                       <a class="nav-link" href="#"><img src="assets/icons/twitter.svg" /></a>
-                    </li>
+                    </li> */ ?>
                   </ul>
                 </nav>
               </div>
             </div>
           </div>
           <div class="col-lg-5">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5500.739615504393!2d77.66033737071706!3d12.868429205489045!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae6cae4eedb12f%3A0xda9a762f9c910a6c!2sSEG%20Automotive!5e0!3m2!1sen!2sin!4v1724609685714!5m2!1sen!2sin" width="100%" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="border"></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1944.6595268664255!2d77.64782593080757!3d12.887194216122237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae14a95d0474c7%3A0x69e375b044002841!2sAECS%20Layout%2C%20Singasandra%2C%20Bengaluru%2C%20Karnataka%20560068!5e0!3m2!1sen!2sin!4v1724702199377!5m2!1sen!2sin" width="100%" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="border"></iframe>
           </div>
         </div>
       </div>

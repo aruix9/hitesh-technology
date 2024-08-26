@@ -16,7 +16,7 @@
             <div class="border-top mt-3 my-md-5"></div>
           </div>
           <div class="col-md-8">
-            <h3 class="fs-2 m-0 mt-3 my-md-5 fw-light">If you are looking for an agency to help you create a remarkable presence online, you've come to the right place. We can help you take your business to the next level.</h3>
+            <h3 class="fs-2 m-0 mt-3 my-md-5 fw-light">We deliver exceptional work that turns your vision into reality. Let's build something extraordinary together.</h3>
           </div>
         </div>
       </div>
@@ -26,47 +26,36 @@
     <section class="py-5 bg-light">
       <div class="container">
         <div class="row mb-5">
-          <div class="col-lg-5 mb-4 align-self-center">
+          <div class="col-lg-5 mb-4">
             <div class="border-2 border-top border-primary mt-5 mb-5 w-80"></div>
             <h2 class="display-3 mb-5 fw-semibold">Take Your Business to the next Level</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae quod neque, dolorem numquam voluptas voluptatem id dicta exercitationem maiores repellendus sint sequi dolores cumque doloremque natus accusamus earum consequatur. Sit!</p>
+            <p>Elevate your business to new heights with our expert digital solutions, designed to transform your vision into reality and propel your growth to the next level of success and innovation.</p>
           </div>
           <div class="col-lg-6 offset-lg-1 mt-5">
             <div class="row mx-0">
               <div class="col-lg-6 mb-4">
-                <div class="bg-light-subtle p-3">
-                  <h3 class="mb-3">Design</h3>
-                  <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae quod neque.</p>
+                <div class="bg-light-subtle p-3">                  
+                  <?php include_once('includes/speciality/ecommerce.php'); ?>
                 </div>
               </div>
               <div class="col-lg-6 mb-4">
                 <div class="bg-light-subtle p-3">
-                  <h3 class="mb-3">Design</h3>
-                  <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae quod neque.</p>
+                  <?php include_once('includes/speciality/uiux.php'); ?>
                 </div>
               </div>
               <div class="col-lg-6 mb-4">
                 <div class="bg-light-subtle p-3">
-                  <h3 class="mb-3">Design</h3>
-                  <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae quod neque.</p>
+                  <?php include_once('includes/speciality/sap.php'); ?>
                 </div>
               </div>
               <div class="col-lg-6 mb-4">
                 <div class="bg-light-subtle p-3">
-                  <h3 class="mb-3">Design</h3>
-                  <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae quod neque.</p>
+                  <?php include_once('includes/speciality/adobe.php'); ?>
                 </div>
               </div>
               <div class="col-lg-6 mb-4">
                 <div class="bg-light-subtle p-3">
-                  <h3 class="mb-3">Design</h3>
-                  <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae quod neque.</p>
-                </div>
-              </div>
-              <div class="col-lg-6 mb-4">
-                <div class="bg-light-subtle p-3">
-                  <h3 class="mb-3">Design</h3>
-                  <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae quod neque.</p>
+                  <?php include_once('includes/speciality/java.php'); ?>
                 </div>
               </div>
             </div>

@@ -16,7 +16,7 @@
             <div class="border-top mt-3 my-md-5"></div>
           </div>
           <div class="col-md-8">
-            <h3 class="fs-2 m-0 mt-3 my-md-5 fw-light">If you are looking for an agency to help you create a remarkable presence online, you've come to the right place. We can help you take your business to the next level.</h3>
+            <h3 class="fs-2 m-0 mt-3 my-md-5 fw-light">We drive digital transformation with expertise in eCommerce, UI/UX, SAP, Adobe, and Java, delivering tailored solutions to empower businesses and achieve their goals.</h3>
           </div>
         </div>
       </div>
@@ -27,15 +27,16 @@
       <div class="container">
         <div class="row mt-5">
           <div class="col-lg-6">
-            <h3 class="mb-3 fw-normal">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae quod neque, dolorem numquam voluptas voluptatem.</h3>
+            <p>At Hitesh Technologies Private Limited, we specialize in delivering innovative digital solutions across eCommerce, UI/UX design, SAP integration, Adobe solutions, and Java development. Our dedicated team is committed to understanding your unique business needs and crafting tailored solutions that drive growth and enhance customer experiences.</p>
+            <p>We believe in a client-first approach, working closely with you to ensure that our solutions align perfectly with your business objectives. As your strategic partners, we are here to help you navigate the digital landscape and achieve lasting success.</p>
             <div class="row">
-              <div class="my-5 col-lg-9">
+              <div class="my-3 col-lg-9">
                 <h3 class="mb-3">Mission.</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae quod neque, dolorem numquam voluptas voluptatem id dicta exercitationem maiores repellendus sint sequi dolores cumque doloremque natus accusamus earum consequatur. Sit!</p>
+                <p>Our mission is to create exceptional digital experiences that drive business growth and success. We are committed to delivering innovative solutions that not only meet but exceed our clients' expectations. By focusing on quality, creativity, and customer satisfaction, we aim to build long-term partnerships and make a positive impact on the industries we serve.</p>
               </div>
               <div class="col-lg-9">
                 <h3 class="mb-3">Vision.</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae quod neque, dolorem numquam voluptas voluptatem id dicta exercitationem maiores repellendus sint sequi dolores cumque doloremque natus accusamus earum consequatur. Sit!</p>
+                <p>Our vision is to become a leading digital agency recognized for our expertise, creativity, and commitment to excellence. We aspire to be the go-to partner for businesses seeking to elevate their digital presence and achieve sustainable growth. By continuously evolving and embracing new technologies, we strive to shape the future of digital solutions and set new standards in the industry.</p>
               </div>
             </div>
           </div>
@@ -47,24 +48,7 @@
 
     <!-- hire us -->
     <section class="py-5">
-      <div class="container">
-        <div class="border-2 border-top border-primary mt-5 mb-5 w-80"></div>
-        <h2 class="display-3 mb-5 fw-semibold">Hire Us For</h2>
-        <div class="row mb-5">
-          <div class="col-lg-4 mb-4">
-            <h3 class="mb-3">Design</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae quod neque, dolorem numquam voluptas voluptatem id dicta exercitationem maiores repellendus sint sequi dolores cumque doloremque natus accusamus earum consequatur. Sit!</p>
-          </div>
-          <div class="col-lg-4 mb-4">
-            <h3 class="mb-3">Design</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae quod neque, dolorem numquam voluptas voluptatem id dicta exercitationem maiores repellendus sint sequi dolores cumque doloremque natus accusamus earum consequatur. Sit!</p>
-          </div>
-          <div class="col-lg-4 mb-4">
-            <h3 class="mb-3">Design</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae quod neque, dolorem numquam voluptas voluptatem id dicta exercitationem maiores repellendus sint sequi dolores cumque doloremque natus accusamus earum consequatur. Sit!</p>
-          </div>
-        </div>
-      </div>
+      <?php require_once('includes/our-specialties.php') ?>
     </section>
 
     <!-- connect -->

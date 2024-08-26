@@ -7,7 +7,7 @@
 
   /* color primary */
 	--p-l: #3f7fda;
-	--p-n: #1458b8;
+	--p-n: #00b9f2;
 	--p-d: #07377a;
   
   /* color secondary */
@@ -137,6 +137,8 @@
 
 /* override bootstrap */
 :root {
+	--bs-primary: var(--p-n);
+	--bs-primary-rgb: 0 185 242;
 	--bs-light-rgb: 242, 242, 242;
 	--bs-font-sans-serif: var(--font-p);
 	--bs-secondary-border-subtle: #4d555c;
@@ -160,10 +162,16 @@
 	--bs-btn-disabled-color: var(--n-80);
 	--bs-btn-disabled-border-color: var(--n-80);
 }
+.border-primary {
+	border-color: var(--p-n) !important;
+}
+.bg-primary {
+	background-color: var(--p-n) !important;
+}
 
 /* useful */
 .min-vh {
-	min-height: 100vh;
+	min-height: calc(100vh - 135px);
 }
 
 .w-80 {
