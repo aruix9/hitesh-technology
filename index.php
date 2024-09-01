@@ -22,8 +22,8 @@
       </div>
     </section>
 
-    <!-- hire us -->
-    <section class="py-5 bg-light">
+    <!-- specialize -->
+    <section class="py-5 bg-light mt-5">
       <?php require_once('includes/our-specialties.php') ?>
     </section>
 

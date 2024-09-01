@@ -19,21 +19,22 @@
 </head>
 <body>
   <!-- header -->
-  <header class="py-5">
+  <header class="mt-3 mb-5">
     <nav class="navbar navbar-expand-lg p-0">
       <div class="container">
         <!-- logo -->
         <a class="navbar-brand m-0 p-0" href="index.php">
-          <img src="assets/images/logo-d.svg" alt="Logo">
+          <img src="assets/images/logo-sm.svg" alt="Logo">
         </a>
 
         <!-- mobile button -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#primary-navigation" aria-controls="primary-navigation" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+          <span></span>
         </button>
         
         <!-- navigation -->
         <div class="collapse navbar-collapse" id="primary-navigation">
+          <span class="times d-xs-blok d-sm-block d-md-block d-lg-none" data-bs-toggle="collapse" data-bs-target="#primary-navigation" aria-controls="primary-navigation" aria-expanded="false" aria-label="Toggle navigation">&times;</span>
           <ul class="navbar-nav m-auto mb-2 mb-lg-0 fw-semibold">
             <li class="nav-item">
               <a class="nav-link" href="index.php">Home</a>

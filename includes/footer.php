@@ -4,7 +4,7 @@
     <div class="container">
       <div class="row mt-5">
         <div class="col-lg-5 mb-5">
-          <img src="assets/images/logo.svg" alt="Logo">
+          <img src="assets/images/logo-sm-d.svg" alt="Logo">
           <p class="mt-4">Empowering digital growth with innovative, tailored solutions in eCommerce, UI/UX, SAP, Adobe, and Java development.</p>
         </div>
         <div class="col-lg-6 ms-auto text-end mb-5">
