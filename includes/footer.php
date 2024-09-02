@@ -20,7 +20,7 @@
                 <a class="nav-link" href="services.php">Services</a>
               </li>
               <li class="px-3">
-                <a class="nav-link" href="#careerModal" data-bs-toggle="modal">Career</a>
+                <a class="nav-link" href="career.php">Career</a>
               </li>
               <li class="px-3">
                 <a class="nav-link" href="contact.php">Contact</a>
@@ -48,63 +48,6 @@
       <p class="text-center border-top pt-5 mb-0 border-secondary-subtle">&copy; Copyright 2024.</p>
     </div>
   </footer>
-
-  <!-- modal -->
-  <div class="modal fade" id="careerModal" aria-hidden="true" aria-labelledby="careerModalToggleLabel" tabindex="-1">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content position-absolute">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="careerModalToggleLabel">Send Your Profile</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <form action="" id="careerForm" class="needs-validation" novalidate>
-          <div class="mb-3">
-              <label for="name" class="form-label">Full Name *</label>
-              <input type="text" class="form-control" name="name" id="name" placeholder="Enter Name" required>
-              <div class="invalid-feedback">
-                  Please enter your full name.
-              </div>
-          </div>
-          <div class="mb-3">
-              <label for="email" class="form-label">Email *</label>
-              <input type="email" name="email" class="form-control" id="email" placeholder="Enter Email" required>
-              <div class="invalid-feedback">
-                  Please enter a valid email address.
-              </div>
-          </div>
-          <div class="mb-3">
-              <label for="url" class="form-label">Portfolio Url</label>
-              <input type="url" name="url" class="form-control" id="url" placeholder="Enter URL">
-              <div class="invalid-feedback">
-                  Please enter a valid URL.
-              </div>
-          </div>
-          <div class="mb-3">
-              <label for="file" class="form-label">Attach Your Resume *</label>
-              <input type="file" name="file" class="form-control" id="file" required>
-              <div class="small text-muted">Only PDF's and word document are accepted.</div>
-              <div class="invalid-feedback">
-                  Please attach your resume.
-              </div>
-          </div>
-          <div class="mb-3">
-              <label for="message" class="form-label">Message</label>
-              <textarea class="form-control" name="message" id="message" rows="5" placeholder="Enter Message"></textarea>
-          </div>
-          <div class="mb-3 text-end">
-              <button type="submit" class="btn btn-primary">Send</button>
-          </div>
-        </form>
-      </div>
-      <div class="loader position-absolute top-0 bottom-0 start-0 end-0 bg-light d-none" style="opacity: 0.6;">
-        <div class="spinner-grow position-absolute top-50 start-50 translate-middle" role="status">
-          <span class="visually-hidden">Loading...</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
 
   <!-- scripts -->
   <script src="assets/js/popper.js"></script>

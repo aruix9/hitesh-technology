@@ -46,7 +46,7 @@
               <a class="nav-link" href="services.php">Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#careerModal" data-bs-toggle="modal">Career</a>
+              <a class="nav-link" href="career.php">Career</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="contact.php">Contact</a>

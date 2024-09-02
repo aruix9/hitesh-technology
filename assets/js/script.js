@@ -19,6 +19,12 @@ else if (currentPath.includes("about-us.php")) {
     .querySelector(".nav-link[href='about-us.php']")
     .classList.add("active");
 }
+// Check if the URL contains 'about-us.php'
+else if (currentPath.includes("career.php")) {
+  document
+    .querySelector(".nav-link[href='career.php']")
+    .classList.add("active");
+}
 // If no specific URL is found, default to 'home'
 else {
   document.querySelector(".nav-link[href='index.php']").classList.add("active");
@@ -97,10 +103,12 @@ document
       form.classList.add("was-validated");
       let formData = new FormData(form);
 
-      document.querySelector("#careerModal .loader").classList.remove("d-none");
+      document
+        .querySelector("#careerFormWrapper .loader")
+        .classList.remove("d-none");
 
       // Send the form data via Fetch API
-      fetch("career.php", {
+      fetch("career-form.php", {
         method: "POST",
         body: formData,
       })
@@ -131,7 +139,7 @@ document
             form.before(errorAlert);
           }
           document
-            .querySelector("#careerModal .loader")
+            .querySelector("#careerFormWrapper .loader")
             .classList.add("d-none");
         })
         .catch((error) => {
@@ -142,7 +150,7 @@ document
             "There was an error processing your request. Please try again later.";
           form.before(errorAlert);
           document
-            .querySelector("#careerModal .loader")
+            .querySelector("#careerFormWrapper .loader")
             .classList.add("d-none");
         });
     } else {

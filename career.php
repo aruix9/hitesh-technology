@@ -1,85 +1,89 @@
-<?php
-  // Get the current domain and protocol
-  $protocol = isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http";
-  $domain = $protocol . "://" . $_SERVER['HTTP_HOST'];
-  
-  if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    // Initialize error array
-    $errors = [];
+<?php require_once('includes/header.php') ?>
 
-    // Sanitize and validate Full Name
-    $name = trim($_POST['name']);
-    if (empty($name)) {
-      $errors[] = "Full Name is required.";
-    }
+  <!-- main -->
+  <main>
+    <!-- hero -->
+    <section class="d-flex my-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-9">
+            <div class="border-2 border-top border-primary mt-5 mb-5 w-80"></div>
+            <h2 class="display-3 m-0 fw-semibold">Career</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 mt-md-3">
+            <div class="border-top mt-3 my-md-5"></div>
+          </div>
+          <div class="col-md-8">
+            <h3 class="fs-2 m-0 mt-3 my-md-5 fw-light">Join our dynamic team where creativity meets technology. We are on the lookout for talented individuals who thrive in a collaborative environment and are excited to push their boundaries.</h3>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    // Sanitize and validate Email
-    $email = filter_var(trim($_POST['email']), FILTER_SANITIZE_EMAIL);
-    if (empty($email) || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
-      $errors[] = "Valid Email is required.";
-    }
+    <!-- hire us -->
+    <section class="py-5 bg-light">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-lg-5 mb-4">
+            <div class="border-2 border-top border-primary mt-5 mb-5 w-80"></div>
+            <h2 class="display-3 mb-5 fw-semibold">Become a Part of Our Creative Team</h2>
+            <p>We review each submission thoroughly by assessing your skills, experience, and portfolio to determine suitability for our roles; if your profile aligns with our needs, we will reach out to you for further discussions and next steps.</p>
+          </div>
+          <div class="col-lg-6 offset-lg-1 mt-5">
+            <div id="careerFormWrapper">
+              <form action="" id="careerForm" class="needs-validation" novalidate>
+                <div class="mb-3">
+                  <label for="name" class="form-label">Full Name *</label>
+                  <input type="text" class="form-control" name="name" id="name" placeholder="Enter Name" required>
+                  <div class="invalid-feedback">
+                      Please enter your full name.
+                  </div>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email *</label>
+                    <input type="email" name="email" class="form-control" id="email" placeholder="Enter Email" required>
+                    <div class="invalid-feedback">
+                        Please enter a valid email address.
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="url" class="form-label">Portfolio Url (Optional)</label>
+                    <input type="url" name="url" class="form-control" id="url" placeholder="Enter URL">
+                    <div class="invalid-feedback">
+                        Please enter a valid URL.
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="file" class="form-label">Attach Your Resume *</label>
+                    <input type="file" name="file" class="form-control" id="file" required>
+                    <div class="small text-muted">Only PDF's and word document are accepted.</div>
+                    <div class="invalid-feedback">
+                        Please attach your resume.
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message (Optional)</label>
+                    <textarea class="form-control" name="message" id="message" rows="5" placeholder="Enter Message"></textarea>
+                </div>
+                <div class="mb-3 text-end">
+                    <button type="submit" class="btn btn-primary">Send</button>
+                </div>
+                <div class="loader position-absolute top-0 bottom-0 start-0 end-0 bg-light d-none" style="opacity: 0.6;">
+                  <div class="spinner-grow position-absolute top-50 start-50 translate-middle" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    // Sanitize and validate Portfolio URL (optional)
-    $url = trim($_POST['url']);
-    if (!empty($url) && !filter_var($url, FILTER_VALIDATE_URL)) {
-      $errors[] = "Please enter a valid URL.";
-    }
+    <!-- connect -->
+    <?php require_once('includes/project-on-mind.php') ?>
+  </main>
 
-    // Validate and handle file upload
-    if (isset($_FILES['file']) && $_FILES['file']['error'] == 0) {
-      $allowedExtensions = ['pdf', 'doc', 'docx'];
-      $fileInfo = pathinfo($_FILES['file']['name']);
-      $fileExtension = strtolower($fileInfo['extension']);
-      
-      if (!in_array($fileExtension, $allowedExtensions)) {
-        $errors[] = "Invalid file format. Only PDF, DOC, and DOCX are allowed.";
-      } else {
-        $fileName = uniqid() . '_' . basename($_FILES['file']['name']);
-        $uploadDir = 'uploads/';
-        $uploadFile = $uploadDir . $fileName;
-        $fileUrl = $domain . '/' . $uploadFile;
-
-        if (!move_uploaded_file($_FILES['file']['tmp_name'], $uploadFile)) {
-          $errors[] = "Failed to upload the file.";
-        }
-      }
-    } else {
-      $errors[] = "Please attach your resume.";
-    }
-
-    // Check if there are any errors
-    if (empty($errors)) {
-      // Prepare the message
-      $message = "Full Name: $name\n";
-      $message .= "Email: $email\n";
-      if (!empty($url)) {
-        $message .= "Portfolio URL: $url\n";
-      }
-      $message .= "Message: " . trim($_POST['message']) . "\n";
-      $message .= "Resume: $fileUrl\n";
-
-      // Email headers
-      $headers = "From: info@domain.com\r\n";
-      $headers .= "Reply-To: $email\r\n";
-
-      // Send email to the admin
-      $adminEmail = "info@domain.com";
-      $subject = "New Career Form Submission";
-      if (mail($adminEmail, $subject, $message, $headers)) {
-        // Send confirmation email to the user
-        $userSubject = "Thank you for your submission!";
-        $userMessage = "Dear $name,\n\nThank you for submitting your resume. We will review your application and get back to you shortly.\n\nBest regards,\nCompany Name";
-        mail($email, $userSubject, $userMessage, $headers);
-
-        // Respond with success message
-        echo "success";
-      } else {
-        echo "There was an issue sending your email. Please try again later.";
-      }
-    } else {
-      // Respond with error messages
-      echo implode("\n", $errors);
-      exit;
-    }
-  }
-?>
+<?php require_once('includes/footer.php') ?>
