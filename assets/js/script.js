@@ -37,7 +37,7 @@ document
     event.preventDefault(); // Prevent form from submitting
 
     // Clear previous alerts
-    let alerts = document.querySelectorAll("#careerModal .alert");
+    let alerts = document.querySelectorAll("#careerFormWrapper .alert");
     alerts.forEach((alert) => alert.remove());
 
     let form = this;
@@ -81,6 +81,7 @@ document
 
     // Validate Resume file
     let fileInput = document.getElementById("file");
+    fileInput.classList.remove("is-invalid");
     if (fileInput.value.trim() === "") {
       showError(fileInput, "Please attach your resume");
       isValid = false;

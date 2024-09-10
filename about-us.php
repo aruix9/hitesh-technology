@@ -27,21 +27,21 @@
       <div class="container">
         <div class="row mt-5">
           <div class="col-lg-6">
-            <p>At Hitesh Technologies Private Limited, we specialize in delivering innovative digital solutions across eCommerce, UI/UX design, SAP integration, Adobe solutions, and Java development. Our dedicated team is committed to understanding your unique business needs and crafting tailored solutions that drive growth and enhance customer experiences.</p>
+            <p>At Hitesh Technologies Private Limited, we are a well-known and trusted company among premier organizations, providing total IT solutions and consultancy. We specialize in delivering innovative digital solutions across eCommerce, UI/UX design, SAP integration, Adobe solutions, and Java development. Our dedicated team is committed to understanding your unique business needs and crafting tailored solutions that drive growth and enhance customer experiences.</p>
             <p>We believe in a client-first approach, working closely with you to ensure that our solutions align perfectly with your business objectives. As your strategic partners, we are here to help you navigate the digital landscape and achieve lasting success.</p>
             <div class="row">
               <div class="my-3 col-lg-9">
                 <h3 class="mb-3">Mission.</h3>
-                <p>Our mission is to create exceptional digital experiences that drive business growth and success. We are committed to delivering innovative solutions that not only meet but exceed our clients' expectations. By focusing on quality, creativity, and customer satisfaction, we aim to build long-term partnerships and make a positive impact on the industries we serve.</p>
+                <p>Our mission is to create digital experiences that drive growth, exceed expectations, and build lasting partnerships through quality and innovation.</p>
               </div>
               <div class="col-lg-9">
                 <h3 class="mb-3">Vision.</h3>
-                <p>Our vision is to become a leading digital agency recognized for our expertise, creativity, and commitment to excellence. We aspire to be the go-to partner for businesses seeking to elevate their digital presence and achieve sustainable growth. By continuously evolving and embracing new technologies, we strive to shape the future of digital solutions and set new standards in the industry.</p>
+                <p>Our vision is to be a leading digital agency, known for creativity and excellence, helping businesses elevate their digital presence and grow sustainably.</p>
               </div>
             </div>
           </div>
           <div class="col-md-5 d-none d-lg-block offset-md-1">
-            <img src="https://images.pexels.com/photos/699459/pexels-photo-699459.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" class="img-fluid">
+            <img src="./assets/images/about-us.jpg" alt="About Hitesh Technologies" class="img-fluid object-fit-cover">
           </div>
       </div>
     </section>

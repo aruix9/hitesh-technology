@@ -30,8 +30,12 @@
       $allowedExtensions = ['pdf', 'doc', 'docx'];
       $fileInfo = pathinfo($_FILES['file']['name']);
       $fileExtension = strtolower($fileInfo['extension']);
+      // Check the file size (maximum 10 MB)
+      $maxFileSize = 10 * 1024 * 1024; // 10 MB in bytes      
       
-      if (!in_array($fileExtension, $allowedExtensions)) {
+      if ($_FILES['file']['size'] > $maxFileSize) {
+          $errors[] = "File size exceeds the maximum limit of 10 MB.";
+      } elseif (!in_array($fileExtension, $allowedExtensions)) {
         $errors[] = "Invalid file format. Only PDF, DOC, and DOCX are allowed.";
       } else {
         $fileName = uniqid() . '_' . basename($_FILES['file']['name']);
@@ -59,11 +63,11 @@
       $message .= "Resume: $fileUrl\n";
 
       // Email headers
-      $headers = "From: info@domain.com\r\n";
+      $headers = "From: career@hiteshtechnologies.com\r\n";
       $headers .= "Reply-To: $email\r\n";
 
       // Send email to the admin
-      $adminEmail = "info@domain.com";
+      $adminEmail = "career@hiteshtechnologies.com";
       $subject = "New Career Form Submission";
       if (mail($adminEmail, $subject, $message, $headers)) {
         // Send confirmation email to the user

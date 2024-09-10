@@ -64,7 +64,7 @@
             </div>
           </div>
           <div class="col-lg-5">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1944.6595268664255!2d77.64782593080757!3d12.887194216122237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae14a95d0474c7%3A0x69e375b044002841!2sAECS%20Layout%2C%20Singasandra%2C%20Bengaluru%2C%20Karnataka%20560068!5e0!3m2!1sen!2sin!4v1724702199377!5m2!1sen!2sin" width="100%" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="border"></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d972.3689807140141!2d77.65206337559083!3d12.87708990456651!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae6bf3562e78a9%3A0x977890f4db27e9f5!2sDream%20Home!5e0!3m2!1sen!2sin!4v1725722716395!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
       </div>
