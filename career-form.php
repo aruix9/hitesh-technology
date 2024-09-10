@@ -1,7 +1,15 @@
 <?php
   // Get the current domain and protocol
   $protocol = isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http";
-  $domain = $protocol . "://" . $_SERVER['HTTP_HOST'];
+  $host = $_SERVER['HTTP_HOST'];
+
+  // Check if the host is 'localhost'
+  if ($host === 'localhost') {
+      $domain = $protocol . "://" . $host;
+  } else {
+      // Assign custom domain if not localhost
+      $domain = "https://hiteshtechnologies.com";
+  }
   
   if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     // Initialize error array

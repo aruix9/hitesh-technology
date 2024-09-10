@@ -78,7 +78,7 @@
                 <div class="mb-3 text-end">
                     <button type="submit" class="btn btn-dark px-3">Send</button>
                 </div>
-                <div class="loader position-absolute top-0 bottom-0 start-0 end-0 bg-light d-none" style="opacity: 0.6;">
+                <div class="loader position-fixed top-0 bottom-0 start-0 end-0 bg-light d-none" style="opacity: 0.6;">
                   <div class="spinner-grow position-absolute top-50 start-50 translate-middle" role="status">
                     <span class="visually-hidden">Loading...</span>
                   </div>
